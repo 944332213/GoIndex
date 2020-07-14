@@ -27,6 +27,22 @@ var html = `
 </html>
 `;
 
+html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+  <title>${authConfig.siteName}</title>
+  <link rel="icon" href="//cdn.jsdelivr.net/gh/944332213/goindex/themes/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/944332213/goindex/themes/favicon.ico" type="image/x-icon" />
+  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/944332213/goindex/themes/${authConfig.theme}/app.js"></script>
+</head>
+<body>
+</body>
+</html>
+`;
+
 addEventListener('fetch', event => {
     event.respondWith(handleRequest(event.request));
 });
