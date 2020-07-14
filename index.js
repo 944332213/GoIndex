@@ -139,7 +139,8 @@ function html(current_drive_order = 0, model = {}) {
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/944332213/goindex/themes/${uiConfig.theme}/app.js,gh/944332213/goindex/src/mdui/0.4.3/mdui.min.js"></script>
+  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/944332213/goindex/themes/${uiConfig.theme}/app.js,gh/944332213/goindex/src/mdui/0.4.3/mdui.min.js"></script>  
+  <script src="//cdn.jsdelivr.net/combine/gh/944332213/goindex/src/mdui/0.4.3/js/mdui.min.js"></script>
 </head>
 <body>
 </body>
