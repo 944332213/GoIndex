@@ -8,7 +8,7 @@
 
 const authConfig = {
   "siteName": "Google Drive By GoIndex", // 网站名称
-  //"version": "_7.14", // 程序版本。用户不要手动修改
+  "version": "1.0", // 程序版本。用户不要手动修改
   /*"client_id": "202264815644.apps.googleusercontent.com",
   "client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ",*/
   // 【注意】强烈推荐使用自己的 client_id 和 client_secret
@@ -139,8 +139,7 @@ function html(current_drive_order = 0, model = {}) {
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/944332213/goindex/themes/${uiConfig.theme}/app.js,gh/944332213/goindex/src/mdui/0.4.3/mdui.min.js"></script>  
-  <script src="//cdn.jsdelivr.net/combine/gh/944332213/goindex/src/mdui/0.4.3/js/mdui.min.js"></script>
+  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/944332213/goindex@${authConfig.version}/themes/${uiConfig.theme}/app.js,gh/944332213/goindex/src/mdui/0.4.3/js/mdui.min.js"></script>
 </head>
 <body>
 </body>
